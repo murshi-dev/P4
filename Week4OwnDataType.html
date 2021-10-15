@@ -1,0 +1,28 @@
+<script>
+  class AddressInfo {
+    constructor(personname, address, contact) {
+      this.personname = personname;
+      this.address = address;
+      this.contact = contact;
+    }
+   
+    displayInfo() {
+      let details =
+        "Name: " +
+        this.personname +
+        " Address: " +
+        this.address +
+        " Contact: " +
+        this.contact;
+      return details;
+    }
+  }
+
+  const person1 = new AddressInfo("Jane", "Penang", "0123458765");
+  const person2 = new AddressInfo("Diane", "Johor", "0123437843");
+
+
+  document.write(person1.displayInfo());
+  document.write("<br>")
+  document.write(person2.displayInfo());
+</script>
